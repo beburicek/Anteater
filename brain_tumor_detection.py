@@ -1,7 +1,6 @@
-import kagglehub
+
 import pandas as pd
+import tensorflow as tf
+from tensorflow.keras import layers, models
 
-path = kagglehub.dataset_download("masoudnickparvar/brain-tumor-mri-dataset/")
-
-print(path)
 
