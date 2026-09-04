@@ -8,10 +8,11 @@ def chat():
             break
         
         messages.append({"role":"user","content":user_input})
-            
+        yield user_input
         response = ollama.chat(model="Anteater", messages=messages,)
         reply= response["message"]["content"]
         messages.append({"role":"assistant","content":reply})
+        yield reply
         print("Bot: ",reply)
         print()
 if __name__== "__main__":
