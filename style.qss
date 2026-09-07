@@ -1,0 +1,47 @@
+/* Globálne pozadie okna */
+QMainWindow {
+    background-color: #1e1e2e;
+}
+
+QTextEdit {
+    background-color: #252538;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+QLineEdit {
+    background-color: #252538;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 14px;
+}
+QLineEdit:focus {
+    border: 1px solid #b4befe;
+}
+
+/* Odosielacie tlačidlo */
+QPushButton {
+    background-color: #b4befe;
+    color: #11111b;
+    border: none;
+    border-radius: 6px;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+QPushButton:hover {
+    background-color: #cba6f7;
+}
+QPushButton:pressed {
+    background-color: #89b4fa;
+}
+QPushButton:disabled {
+    background-color: #45475a;
+    color: #7f849c;
+}
